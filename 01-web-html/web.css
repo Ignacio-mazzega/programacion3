@@ -1,10 +1,7 @@
 h1 {
     color: red;
+    text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-th {
-    color: blue;
 }
 
 span {
@@ -16,3 +13,43 @@ span {
     background-color: gold;
 }
 
+th {
+    border: 1px solid black;
+    color: blue;
+    
+}
+
+table td {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+table {
+    text-align: center;
+    padding-left: 45%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%; 
+}
+
+table td:hover {
+    background-color: gold;
+}
+
+li {
+    font-family: fantasy;
+}
+
+.menu {
+    text-align: center;
+    background-color: wheat;
+}
+
+.enlace {
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+    background-color: lightskyblue;
+}
