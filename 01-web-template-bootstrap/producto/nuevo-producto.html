@@ -12,29 +12,25 @@
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="stylesheet" href="../public/css/styles.css">
 
-    <title>Ver producto</title>
+    <title>Nuevo producto</title>
 </head>
 
-<body class="overflow-auto">
+<body>
     <div class="d-flex">
         <div id="sidebar-container" class="bg-primary">
             <div class="logo">
                 <h4 class="text-light font-weight-bold">Cesit-Productos</h4>
             </div>
             <div class="menu">
-                <a href="./menu.html" class="d-block text-light p-3"><i class="icon ion-md-undo m-2 lead"></i>Inicio</a>
-                <a href="./productos.html" class="d-block text-light p-3"><i
-                        class="icon ion-md-cart m-2 lead"></i>Productos</a>
+                <a href="../menu.html" class="d-block text-light p-3"><i class="icon ion-md-undo m-2 lead"></i>Inicio</a>
+                <a href="../producto/productos.html" class="d-block text-light p-3"><i class="icon ion-md-cart m-2 lead"></i>Productos</a>
                 <a href="#" class="d-block text-light p-3"><i class="icon ion-md-build m-2 lead"></i>Servicios</a>
             </div>
         </div>
 
-        
-
         <div class="w-100">
-
             <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -42,12 +38,12 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+
                     <form class="d-flex position-relative">
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                        <button class="btn btn-success btn-search position-absolute" type="submit"><i
-                                class="icon ion-md-search"></i></button>
+                        <button class="btn btn-success btn-search position-absolute" type="submit"><i class="icon ion-md-search"></i></button>
                     </form>
-    
+
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav">
                             <li class="nav-item dropdown">
@@ -62,7 +58,7 @@
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                                    <li><a class="dropdown-item" href="../login.html">Cerrar sesión</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -70,30 +66,28 @@
                 </div>
             </nav>
 
-            <h1 class="ms-3 p-3">Ver producto</h1>
+            <form action="">
+                <div class="form-group">
+                    <h1 class="ms-2">Agrega nuevo producto</h1>
+                </div>
+                <div class="form-group container-fluid w-50 col-auto p-3">
+                    <label for="" class="form-label">Ingrese el nuevo producto:</label>
+                    <input type="text" name="" id="" class="form-control" placeholder="Nombre del producto">
+                </div>
 
-            <ul class="list-group ms-3 me-3">
-                <li class="list-group-item list-group-item-primary">Nombre: Zapatillas Rojas</li>
-                <li class="list-group-item list-group-item-primary">Precio: $5000</li>
-            </ul><br>
-            <ul class="list-group ms-3 me-3">
-                <li class="list-group-item list-group-item-primary">Nombre: Zapatillas Verdes</li>
-                <li class="list-group-item list-group-item-primary">Precio: $8000</li>
-            </ul><br>
-            <ul class="list-group ms-3 me-3">
-                <li class="list-group-item list-group-item-primary">Nombre: Remera Blanca</li>
-                <li class="list-group-item list-group-item-primary">Precio: $2000</li>
-            </ul><br>
-            <ul class="list-group ms-3 me-3">
-                <li class="list-group-item list-group-item-primary">Nombre: Jeans</li>
-                <li class="list-group-item list-group-item-primary">Precio: $4000</li>
-            </ul><br>
-            <ul class="list-group ms-3 me-3">
-                <li class="list-group-item list-group-item-primary">Nombre: Gorra</li>
-                <li class="list-group-item list-group-item-primary">Precio: $1000</li>
-            </ul><br>
+                <div class="form-group container-fluid w-50 col-auto p-3">
+                    <label for="" class="form-label">Ingrese el precio:</label>
+                    <input type="text" name="" id="" class="form-control" placeholder="Precio">
+                </div>
 
-            <a href="./productos.html" class="btn btn-primary ms-3 mb-2">Volver</a>
+                <div class="form-group container-fluid w-50 col-auto p-3">
+                    <input type="button" class="btn btn-success" value="Guardar">
+                    <input type="button" class="btn btn-primary" value="Limpiar">
+                    <a type="button" class="btn btn-danger" href="../producto/productos.html" value="Cancelar">Cancelar</a>
+                </div>
+            </form>
         </div>
-    </div>
+        </div>
+
+        
 </body>
